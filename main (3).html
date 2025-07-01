@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flagra Zap</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f8f8f8;
+    }
+    .top-timer {
+      background: #000;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+    .timer-box {
+      font-size: 24px;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+    .btn-comprar {
+      background: #04B404;
+      color: white;
+      padding: 15px;
+      font-size: 20px;
+      text-align: center;
+      font-weight: bold;
+      margin: 10px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    .section-app {
+      background: #007F3D;
+      color: white;
+      text-align: center;
+      padding: 30px 15px;
+    }
+    .section-app img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+    .form-container {
+      background: white;
+      padding: 20px;
+    }
+    .form-container h2 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    input[type="text"], input[type="email"], input[type="file"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .pix-box {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 15px;
+      background: #e0f7e9;
+    }
+    .ofertas {
+      border: 1px solid orange;
+      background: #fffaf0;
+      padding: 10px;
+      margin-top: 20px;
+    }
+    .oferta-item {
+      border-bottom: 1px solid #ddd;
+      padding: 10px 0;
+    }
+    .oferta-item:last-child {
+      border-bottom: none;
+    }
+    .oferta-item img {
+      width: 100%;
+      max-width: 100px;
+      display: block;
+      margin-bottom: 5px;
+    }
+    .oferta-item button {
+      background: #04B404;
+      color: white;
+      padding: 8px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 5px;
+    }
+    .total, .pagar {
+      text-align: center;
+      font-size: 18px;
+      padding: 10px;
+    }
+    .pagar {
+      background: #04B404;
+      color: white;
+      border-radius: 5px;
+      margin: 10px 20px;
+      cursor: pointer;
+    }
+    .info {
+      padding: 10px 20px;
+      font-size: 14px;
+    }
+    .info div {
+      margin-bottom: 10px;
+    }
+    .sac {
+      text-align: center;
+      font-size: 14px;
+      margin: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="top-timer">
+    <div>Promoção limitada !</div>
+    <div class="timer-box" id="countdown">05:00</div>
+    <div class="btn-comprar" onclick="window.location.href='https://app.pushinpay.com.br/service/pay/9F4A0D47-CCE7-46FF-9433-88E755C100F7'">COMPRAR AGORA</div>
+  </div>
+
+  <div class="section-app">
+    <img src="https://i.postimg.cc/qvW880T8/iwd8c33aiobjn6vw4gkdgxlfo.png" >
+  </div>
+
+  <div class="form-container">
+    <h2>1 - Identifique-se</h2>
+    <input type="text" placeholder="Nome e sobrenome">
+    <input type="email" placeholder="E-mail">
+    <input type="text" placeholder="Telefone/WhatsApp">
+    <input type="file" accept="image/*">
+
+    <h2>2 - Pagamento</h2>
+    <div class="pix-box">
+      <strong>PIX</strong> <br>
+      <p>- Liberação imediata!</p>
+      <p>- É simples, só usar o aplicativo do banco para pagar PIX.</p>
+      <p>- Super seguro.</p>
+    </div>
+    <input type="text" placeholder="CPF">
+
+    <p>Você está adquirindo:</p>
+    <div><strong>APP FLAGRA ZAP - R$ 29,90</strong></div>
+
+    <div class="ofertas">
+      <h3>🎉 Você tem (4) ofertas</h3>
+      <div class="oferta-item">
+        <img src="https://i.postimg.cc/NFPxSHWn/yyltjhjdo5nlvjzeigqxbgncl.jpg" alt="Acesso Vitalício">
+        <div>Acesso Vitalício - R$ 59,90</div>
+        <button onclick="window.location.href='https://app.pushinpay.com.br/service/pay/9F4A101F-A03B-40EC-AE8D-4074DE2ED649'">Comprar Agora</button>
+      </div>
+      <div class="oferta-item">
+        <img src="https://i.postimg.cc/SsH6GhC0/iev4oyjgrwr0cx3z8loaaeksr.png" alt="Recuperador">
+        <div>Recuperador de mensagens apagadas - R$ 15,90</div>
+        <button onclick="window.location.href='https://app.pushinpay.com.br/service/pay/9F4A108E-6A1D-4E47-9367-9E29F03CB2C2'">Comprar Agora</button>
+      </div>
+      <div class="oferta-item">
+        <img src="https://i.postimg.cc/tgKJSCSz/n78vbthjr6lvjiyxmbzwsw3y0.jpg" alt="Localizador">
+        <div>Localizador de Contatos - R$ 19,90</div>
+        <button onclick="window.location.href='https://app.pushinpay.com.br/service/pay/9F4A10DB-4A25-47BB-ADFE-71501E21A73E'">Comprar Agora</button>
+      </div>
+      <div class="oferta-item">
+        <img src="https://i.postimg.cc/zfCYNzD7/gi4le0yof9txhn6xickiwboqd.jpg" alt="Insta Fantasma">
+        <div>Insta Fantasma (Clonador de Instagram) - R$ 29,90</div>
+        <button onclick="window.location.href='https://app.pushinpay.com.br/service/pay/9F4A11A2-0689-4F85-ACB2-F82599FE2FAF'">Comprar Agora</button>
+      </div>
+    </div>
+    <div class="pagar" onclick="window.location.href='https://app.pushinpay.com.br/service/pay/9F4A0D47-CCE7-46FF-9433-88E755C100F7'">COMPRAR FLAGRA ZAP</div>
+
+    <div class="info">
+      <div><strong>Dados protegidos:</strong> Os seus dados são confidenciais e seguros.</div>
+      <div><strong>Pagamento 100% Seguro:</strong> As informações desta compra são criptografadas.</div>
+      <div><strong>Conteúdo Aprovado:</strong> 100% revisado e aprovado por profissionais.</div>
+      <div><strong>Garantia de 7 dias:</strong> Você está protegido por uma garantia de satisfação.</div>
+    </div>
+
+    <div class="sac">
+      <strong>Sac Flagra Zap (Suporte)</strong><br>
+      Email: sacflagrazap@contato.com
+    </div>
+  </div>
+
+  <script>
+    // Contagem regressiva de 5 minutos
+    let duration = 300; // 5 minutos em segundos
+    const countdown = document.getElementById('countdown');
+
+    const timer = setInterval(() => {
+      const minutes = String(Math.floor(duration / 60)).padStart(2, '0');
+      const seconds = String(duration % 60).padStart(2, '0');
+      countdown.textContent = `${minutes}:${seconds}`;
+      duration--;
+      if (duration < 0) clearInterval(timer);
+    }, 1000);
+  </script>
+</body>
+</html>
