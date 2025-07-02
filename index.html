@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Flagra Zap</title>
   <style>
     body {
@@ -11,26 +11,45 @@
       background: #f8f8f8;
     }
     .top-timer {
-      background: #000;
+      background: #D60000;
       color: white;
       text-align: center;
-      padding: 15px;
+      padding: 20px 15px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    }
+    .top-timer h1 {
+      margin: 0;
+      font-size: 22px;
+      font-weight: bold;
+      text-transform: uppercase;
     }
     .timer-box {
-      font-size: 24px;
+      font-size: 26px;
       font-weight: bold;
-      margin: 10px 0;
+      margin: 12px 0;
+      background: #fff;
+      color: #D60000;
+      display: block;        /* força linha nova */
+      padding: 8px 16px;
+      border-radius: 8px;
+      width: fit-content;    /* botão ajusta ao conteúdo */
+      margin-left: auto;     /* centraliza */
+      margin-right: auto;
     }
     .btn-comprar {
       background: #04B404;
       color: white;
-      padding: 15px;
-      font-size: 20px;
+      padding: 8px 12px;     /* menor padding para botão menor */
+      font-size: 16px;       /* fonte menor */
       text-align: center;
       font-weight: bold;
-      margin: 10px;
+      margin-top: 10px;
       border-radius: 8px;
       cursor: pointer;
+      display: block;        /* força linha nova */
+      width: fit-content;    /* tamanho do botão conforme texto */
+      margin-left: auto;     /* centraliza */
+      margin-right: auto;
     }
     .section-app {
       background: #007F3D;
@@ -119,58 +138,70 @@
   </style>
 </head>
 <body>
+
   <div class="top-timer">
-    <div>Promoção limitada !</div>
-    <div class="timer-box" id="countdown">05:00</div>
-    <div class="btn-comprar" onclick="window.location.href='https://app.pushinpay.com.br/service/pay/9F4A0D47-CCE7-46FF-9433-88E755C100F7'">COMPRAR AGORA</div>
+    <h1>Promoção limitada!</h1>
+    <div class="timer-box" id="countdown">07:00</div>
+    <div class="btn-comprar" onclick="window.location.href='https://app.pushinpay.com.br/service/pay/9F4A0D47-CCE7-46FF-9433-88E755C100F7'">
+      COMPRAR AGORA
+    </div>
   </div>
 
   <div class="section-app">
-    <img src="https://i.postimg.cc/qvW880T8/iwd8c33aiobjn6vw4gkdgxlfo.png" >
+    <img src="https://i.postimg.cc/qvW880T8/iwd8c33aiobjn6vw4gkdgxlfo.png" alt="Imagem App" />
   </div>
 
   <div class="form-container">
     <h2>1 - Identifique-se</h2>
-    <input type="text" placeholder="Nome e sobrenome">
-    <input type="email" placeholder="E-mail">
-    <input type="text" placeholder="Telefone/WhatsApp">
-    
+    <input type="text" placeholder="Nome e sobrenome" />
+    <input type="email" placeholder="E-mail" />
+    <input type="text" placeholder="Telefone/WhatsApp" />
+   
+
     <h2>2 - Pagamento</h2>
     <div class="pix-box">
-      <strong>PIX</strong> <br>
+      <strong>PIX</strong> <br />
       <p>- Liberação imediata!</p>
       <p>- É simples, só usar o aplicativo do banco para pagar PIX.</p>
       <p>- Super seguro.</p>
     </div>
-    <input type="text" placeholder="CPF">
+    <input type="text" placeholder="CPF" />
 
     <p>Você está adquirindo:</p>
     <div><strong>APP FLAGRA ZAP - R$ 29,90</strong></div>
 
     <div class="ofertas">
       <h3>🎉 Você tem (4) ofertas</h3>
+
       <div class="oferta-item">
-        <img src="https://i.postimg.cc/NFPxSHWn/yyltjhjdo5nlvjzeigqxbgncl.jpg" alt="Acesso Vitalício">
+        <img src="https://i.postimg.cc/NFPxSHWn/yyltjhjdo5nlvjzeigqxbgncl.jpg" alt="Acesso Vitalício" />
         <div>Acesso Vitalício - R$ 59,90</div>
         <button onclick="window.location.href='https://app.pushinpay.com.br/service/pay/9F4A101F-A03B-40EC-AE8D-4074DE2ED649'">Comprar Agora</button>
       </div>
+
       <div class="oferta-item">
-        <img src="https://i.postimg.cc/SsH6GhC0/iev4oyjgrwr0cx3z8loaaeksr.png" alt="Recuperador">
+        <img src="https://i.postimg.cc/SsH6GhC0/iev4oyjgrwr0cx3z8loaaeksr.png" alt="Recuperador" />
         <div>Recuperador de mensagens apagadas - R$ 15,90</div>
         <button onclick="window.location.href='https://app.pushinpay.com.br/service/pay/9F4A108E-6A1D-4E47-9367-9E29F03CB2C2'">Comprar Agora</button>
       </div>
+
       <div class="oferta-item">
-        <img src="https://i.postimg.cc/tgKJSCSz/n78vbthjr6lvjiyxmbzwsw3y0.jpg" alt="Localizador">
+        <img src="https://i.postimg.cc/tgKJSCSz/n78vbthjr6lvjiyxmbzwsw3y0.jpg" alt="Localizador" />
         <div>Localizador de Contatos - R$ 19,90</div>
         <button onclick="window.location.href='https://app.pushinpay.com.br/service/pay/9F4A10DB-4A25-47BB-ADFE-71501E21A73E'">Comprar Agora</button>
       </div>
+
       <div class="oferta-item">
-        <img src="https://i.postimg.cc/zfCYNzD7/gi4le0yof9txhn6xickiwboqd.jpg" alt="Insta Fantasma">
+        <img src="https://i.postimg.cc/zfCYNzD7/gi4le0yof9txhn6xickiwboqd.jpg" alt="Insta Fantasma" />
         <div>Insta Fantasma (Clonador de Instagram) - R$ 29,90</div>
         <button onclick="window.location.href='https://app.pushinpay.com.br/service/pay/9F4A11A2-0689-4F85-ACB2-F82599FE2FAF'">Comprar Agora</button>
       </div>
     </div>
-    <div class="pagar" onclick="window.location.href='https://app.pushinpay.com.br/service/pay/9F4A0D47-CCE7-46FF-9433-88E755C100F7'">COMPRAR FLAGRA ZAP</div>
+
+   
+    <div class="pagar" onclick="window.location.href='https://app.pushinpay.com.br/service/pay/9F4A0D47-CCE7-46FF-9433-88E755C100F7'">
+      COMPRAR FLAGRA ZAP
+    </div>
 
     <div class="info">
       <div><strong>Dados protegidos:</strong> Os seus dados são confidenciais e seguros.</div>
@@ -180,16 +211,14 @@
     </div>
 
     <div class="sac">
-      <strong>Sac Flagra Zap (Suporte)</strong><br>
+      <strong>Sac Flagra Zap (Suporte)</strong><br />
       Email: sacflagrazap@contato.com
     </div>
   </div>
 
   <script>
-    // Contagem regressiva de 5 minutos
-    let duration = 300; // 5 minutos em segundos
+    let duration = 420; // 7 minutos
     const countdown = document.getElementById('countdown');
-
     const timer = setInterval(() => {
       const minutes = String(Math.floor(duration / 60)).padStart(2, '0');
       const seconds = String(duration % 60).padStart(2, '0');
@@ -200,3 +229,4 @@
   </script>
 </body>
 </html>
+
